@@ -1,0 +1,193 @@
+/* ============= RESET CSS ================ */
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #333;
+    font-family: 'Kanit', sans-serif;
+}
+/* ================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.logo {
+  box-sizing: content-box;
+  padding-left: 30px;
+  width: 70px;
+}
+
+.logo svg {
+  display: block;
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  height: 70px;
+  text-transform: capitalize;
+}
+
+nav > ul > li {
+ line-height: 70px;
+ padding: 0 30px;
+}
+
+nav > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.nav-right ul li {
+  border-left: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.left {
+  background-color: #f7f7f6;
+  height: 100%;
+  flex: 1;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+}
+
+.product-info h1 {
+  font-size: 3.2rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 0.3rem;/* espaçamento entre letras */
+}
+
+.product-info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.product-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 900;
+  padding: 20px;
+  color: #f7f7f7;
+  transition: box-shadow .5s ease-in-out,
+                transform .5s ease-in-out;
+}
+
+.descover-btn {
+  background-color: #a4a4a4;
+}
+
+.car-btn {
+  background-color: black
+}
+
+.action-product {
+  display: flex;
+}
+
+.btn:hover {
+  box-shadow: 3px 10px 20px rgba(0,0,0,.3);
+  transform: translateY(-5px);
+}
+
+.right {
+  background-color: #74d3ff;
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.right img {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: -150px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-info h1 {
+    font-size: 2rem;
+  }
+
+  .product-info p {
+    font-size: 1rem;
+  }
+
+  .product-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 13px;
+  }
+
+  .right img {
+    left: -80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  nav > ul {
+    font-size: 0.8rem;
+    line-height: 50px;
+  }
+
+  nav > ul > li {
+    padding: 0 20px;
+  }
+
+  .right img {
+    left: -50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right img {
+    left: 0;
+    width: 100%;
+  }
+}
