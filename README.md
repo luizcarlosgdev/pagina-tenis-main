@@ -10,3 +10,6 @@ Funcionalidades do projeto:
 
 - Layout responsivo em diferentes telas como Desktop, tablet e celular.
 - Animações de interação com hover.
+
+Confira o resultado final:
+airmaxpage.netlify.app 
